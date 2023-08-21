@@ -46,6 +46,16 @@ PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleDisplayName string ${A
 PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleIconName string AppIcon"
 PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleIconFile string AppIcon"
 PlistBuddy ${APPROOT}/Contents/Info.plist -c "add NSHighResolutionCapable bool true"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleExecutable string PCSX-Redux"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleDevelopmentRegion string en"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleInfoDictionaryVersion string 6.0"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleName string ${APP}"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundlePackageType string APPL"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add CFBundleIdentifier string net.pcsx.Pcsx-Redux"
+PlistBuddy ${APPROOT}/Contents/Info.plist -c "add NSHumanReadableCopyright string Copyright 2023 PCSX-Redux Team"
+
+# TODO: add version numbers CFBundleVersion and CFShortVersionString
+
 PlistBuddy ${APPROOT}/Contents/version.plist -c "add ProjectName string ${APP}"
 
 # Install dylib dependencies in ./Contents/Frameworks.
